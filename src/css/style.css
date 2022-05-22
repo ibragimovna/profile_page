@@ -21,30 +21,37 @@ a:visited {color: gray;
     border-radius: 28px;
     box-shadow: 4px 4px 14px rgba(0.0.0.0.25);
 }
-.info p {
+.info {
     color: #86898f;
-    margin:0;
+    margin: 10px;
     font-style: italic;
     font-weight: bold;
     text-decoration: none;
+    display: flex;
     /*text-transform: capitalize;*/
 }
-.info {
+.info-text {
     margin-bottom: 20px;
+    margin: 10px;
+}
+.info-class {
+    display: flex;
+    flex-direction: column;
 }
 .container{
     max-width: 750px;
     margin: auto;
-}.card {
+}
+.card {
     padding: 15px 20px;
     margin-bottom: 20px;
     border-radius: 20px;
 }
 .bg-yellow {
-    background: #e6d78f;
+    background: #fff;
 }
 .bg-green{
-    background: #84cc8a;
+    background: #fff;
 }
 .card h2 {
     margin-bottom: 10px;
@@ -52,7 +59,7 @@ a:visited {color: gray;
 .list {
     padding: 0 20px;
 }
-,list li {
+.list li {
     color: gray;
     margin-bottom: 10px;
 }
@@ -67,6 +74,9 @@ a:visited {color: gray;
     color:grey
 }
 .wrapper {
-    display: inline-block;
-    font-size: 40px;
+    display: flex;
+    margin: 10px;
+}
+.wrapper span{
+    margin-left: 2px;
 }

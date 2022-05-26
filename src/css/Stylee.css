@@ -1,12 +1,14 @@
 *{
-    padding: 0;
-    margin: 0;
+    padding: 5px;
+    margin: 5px;
     box-sizing: border-box;
+    /* font-family: jos; */
 
 }
-:root {
-    color: #222;
+html {
+    color: #000;
     line-height: 1.5;
+    font-family: "Josefin Sans";
 }
 h1 {
     font-size: 2rem;
@@ -15,17 +17,17 @@ h1 {
 h2 {
     font-size: 1.25rem;
     text-transform: uppercase;
-    border-top: 1px solid #b1eaff;
-    border-bottom: 1px solid #b1eaff ;
-    padding: 1rem 0;
-    margin-bottom: 2rem;
-    color: #b1eaff;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888 ;
+    padding: 1px 0;
+    margin-bottom: 1px;
+    color: #888;
 }
 h3{
    font-size: 1rem;
    text-transform: uppercase;
    color: salmon;
-   margin-bottom: 1rem;
+   margin-bottom: 1px;
 }
 p {
     line-height: 1.5;
@@ -34,7 +36,7 @@ section + section {
     margin-top: 2rem;
 }
 li + li{
-    margin-top: 0.5rem;
+    margin-top: 1px;
 }
 ul {
     list-style: none;
@@ -62,8 +64,8 @@ a {
     text-transform: uppercase;
     text-align: right;
     padding: 1rem;
-    border-top: 1px solid #b1eaff;
-    border-bottom: 1px solid #b1eaff ;
+    border-top: 5px solid #888;
+    border-bottom: 5px solid #888 ;
 }
 .Contact li+li {
 
@@ -73,18 +75,34 @@ a {
     grid-template-columns: 1fr 1fr 1fr;    
     grid-gap: 1rem;
 }
- .timeline .event + .event{
-     padding-top:1rem ;
+ /* .timeline .event + .event{ */
+     /* padding-top: 1rem ; */
  }
-.event {
+/* .event { 
     display: grid;
     grid-template-columns: 5ch 1fr;
 }
  .content {
-    border-left: 1px solid #b1eaff;
-    padding-left: 1rem;
-    margin-left: 1rem;
+    border-left: 1px solid #888;
+    padding-left: 2px;
+    margin-left: 2px;
+} */
+.Edu ul li::before,
+.jobs ul li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #000;
 }
 .content > h3+p {
     margin-bottom: 1rem;
+}
+.resume {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 2rem;
 }

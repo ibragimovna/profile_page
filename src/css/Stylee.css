@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+:root {
+    color: #222;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    border-top: 1px solid #b1eaff;
+    border-bottom: 1px solid #b1eaff ;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    color: #b1eaff;
+}
+h3{
+   font-size: 1rem;
+   text-transform: uppercase;
+   color: salmon;
+   margin-bottom: 1rem;
+}
+p {
+    line-height: 1.5;
+}
+section + section {
+    margin-top: 2rem;
+}
+li + li{
+    margin-top: 0.5rem;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit
+}
+.Profile{
+    text-align: center;
+}
+.Profile img {
+    border-radius: 9999px;
+    width: 15rem;
+    height: 15rem;
+}
+.Profile p {
+    color
+    margin: 1rem;
+}
+.Contact ul {
+    margin-top: -2rem;
+}
+.Contact li {
+    text-transform: uppercase;
+    text-align: right;
+    padding: 1rem;
+    border-top: 1px solid #b1eaff;
+    border-bottom: 1px solid #b1eaff ;
+}
+.Contact li+li {
+
+}
+.Skills > ul {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+    grid-gap: 1rem;
+}
+ .timeline .event + .event{
+     padding-top:1rem ;
+ }
+.event {
+    display: grid;
+    grid-template-columns: 5ch 1fr;
+}
+ .content {
+    border-left: 1px solid #b1eaff;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+.content > h3+p {
+    margin-bottom: 1rem;
+}

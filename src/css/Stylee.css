@@ -1,6 +1,6 @@
 *{
     padding: 5px;
-    margin: 5px;
+    margin: 0px;
     box-sizing: border-box;
     /* font-family: jos; */
 
@@ -16,28 +16,27 @@ h1 {
 }
 h2 {
     font-size: 1.25rem;
-    text-transform: uppercase;
-    border-top: 2px solid #888;
-    border-bottom: 2px solid #888 ;
+    text-transform:capitalize;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888 ;
     padding: 2px 0;
-    margin-bottom: 1px;
+    /* margin-bottom: 0.5px; */
     color: #888;
 }
 h3{
    font-size: 1rem;
-   text-transform: uppercase;
-   color: salmon;
-   margin-bottom: 2px;
+   text-transform:capitalize;
+   color: black;
 }
 p {
-    line-height: 1.5;
+    line-height: 1;
 }
-section + section {
-    margin-top: 5px;
-}
-li + li{
-    margin-top: 1px;
-}
+/* section + section {
+    margin-top: 0.5px;
+} */
+/* li + li{
+    margin-top: 0.5px;
+} */
 ul {
     list-style: none;
 }
@@ -54,30 +53,28 @@ a {
     height: 15rem;
 }
 .Profile p {
-    color
-    margin: 1rem;
+    margin: 1px;
 }
 .Contact ul {
     margin-top: -2rem;
 }
 .Contact li {
-    text-transform: uppercase;
+    text-transform:capitalize;
     text-align: right;
-    padding: 1rem;
-    border-top: 1px solid #888;
-    border-bottom: 1px solid #888 ;
-}
-.Contact li+li {
-
+    padding: 0px;
+    border-top: 0px solid #888;
+    border-bottom: 0px solid #888 ;
 }
 .Skills > ul {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;    
-    grid-gap: 1rem;
+    display:flexbox;
+    flex-direction: column;  
+    /* grid-gap: 1rem; */
+}
+.Contact h2 {
+    margin-left: 0px;
 }
  /* .timeline .event + .event{ */
      /* padding-top: 1rem ; */
- }
 /* .event { 
     display: grid;
     grid-template-columns: 5ch 1fr;
@@ -87,8 +84,11 @@ a {
     padding-left: 2px;
     margin-left: 2px;
 } */
-
-.123 li::before {
+.Socials a {
+    margin: 40px;
+    width: 80px;
+}
+.Edu li::before {
     content: "";
     position: absolute;
     top: 5px;
@@ -99,7 +99,7 @@ a {
     border: 2px solid #000;
 }
 .content > h3+p {
-    margin-bottom: 1rem;
+    margin-bottom: 1px;
 }
 .resume {
     display: grid;
@@ -107,5 +107,8 @@ a {
     grid-gap: 2rem;
 }
 .Contact h2 {
-    margin: 15px;
+    margin: 30px;
+}
+.border {
+    border-bottom: 1px solid #888;
 }

@@ -1,0 +1,68 @@
+body{
+    padding: 20px;
+    margin: 0;
+    background-image:radial-gradient(#c7c7c7 25%, #c7c7c7 74%) ;
+    font-family: system-ui;
+    font-size: small;
+}
+.clearfix {
+    clear: both;
+}
+.resume {
+    height: 1150px;
+    width: 1000px;
+    background-color: white;
+    box-shadow: 5px 7px 15px #b9b6b6;
+    margin: 20px auto;
+}
+.profile {
+    background-color: rgb(218, 212, 206);
+    text-align:center;
+    padding: 20px;
+    border-bottom:1px solid #141111 ;
+}
+ .p1{
+     font-weight: 600;
+     font-size: larger;
+     color: rgb(3, 7, 44);
+ }
+img {
+    width: 100px;
+    border-radius: 50%;
+
+}
+h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 10px;
+}
+.col-left{
+
+    float: left;
+}
+.col-right{
+  float: left;
+}
+.line {
+    border-left: 1px solid #c7c7c7;
+    height: 800px;
+    width: 2%;
+    margin: 10px;
+    float: left;
+}
+.content-box{
+    padding: 20px;
+}
+.link {
+    position: relative;
+    left: 240px;
+}
+.tel {
+    position: relative;
+    right: 120px;
+}
+.job {
+    padding-left: 30px;
+}
